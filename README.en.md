@@ -2,7 +2,7 @@
 
 **A fully local AI video editing pipeline: transcribe → cut dead air → subtitles → vertical clips → footage search. Offline, no API keys.**
 
-`14/14 command self-tests passing` · `GPU ASR 6.3× faster than CPU` · `MIT`
+`14/14 command self-tests passing` · `GPU ASR 6.3× faster than CPU` · `Apache-2.0`
 
 ![rough cut output](docs/preview-rough.jpg)
 
@@ -219,11 +219,17 @@ tools/
 
 ## License
 
-**MIT** — see [LICENSE](LICENSE).
+**Apache License 2.0** — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+Why: every dependency here is permissively licensed (BSD-3 / MIT / Apache-2.0 / ISC), and
+Apache-2.0 adds an explicit patent grant plus a trademark carve-out over MIT, which is clearer
+for corporate and commercial integrators. The cost is keeping the NOTICE file and marking
+modified files when redistributing.
 
 Third-party components (PyTorch BSD-3, faster-whisper MIT, PySceneDetect BSD-3, open_clip MIT,
 Gradio Apache-2.0, FFmpeg LGPL/GPL) and model weights (Whisper and CLIP, both MIT) are documented
 in [THIRD_PARTY.md](THIRD_PARTY.md).
 
 > FFmpeg is invoked as an external process and is not redistributed with this repository. If you
-> ship a bundle, verify the license of the FFmpeg build you use.
+> ship a bundle, verify the license of the FFmpeg build you use. Note that Apache-2.0 is not
+> compatible with GPLv2, should you ever want to merge GPLv2 code.

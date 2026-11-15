@@ -1,0 +1,21 @@
+AIClip
+Copyright 2026 tongriyaotxt
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It bundles no third-party source code. It depends on the following projects at
+runtime, each governed by its own license (see THIRD_PARTY.md):
+
+  PyTorch, torchvision            BSD-3-Clause
+  faster-whisper, CTranslate2     MIT
+  PySceneDetect                   BSD-3-Clause
+  open_clip                       MIT
+  OpenCV                          Apache-2.0
+  Gradio                          Apache-2.0
+  librosa                         ISC
+  NumPy                           BSD-3-Clause
+  Pillow                          MIT-CMU
+  FFmpeg (external subprocess)    LGPL-2.1+ / GPL (depending on build)
+
+Model weights (Whisper and CLIP) are downloaded at first run and are MIT licensed.
+They are not distributed with this repository.

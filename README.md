@@ -2,7 +2,7 @@
 
 **本地 AI 视频剪辑流水线：转写 → 剪气口 → 字幕 → 竖屏切片 → 素材检索。全离线，不调 API。**
 
-`14/14 命令自检通过` · `GPU 转写 6.3× CPU` · `MIT`
+`14/14 命令自检通过` · `GPU 转写 6.3× CPU` · `Apache-2.0`
 
 ![粗剪成品](docs/preview-rough.jpg)
 
@@ -213,11 +213,15 @@ tools/
 
 ## 许可
 
-本项目采用 **MIT**，见 [LICENSE](LICENSE)。
+本项目采用 **Apache License 2.0**，见 [LICENSE](LICENSE) 与 [NOTICE](NOTICE)。
+
+选它的原因：本项目的依赖全是宽松许可（BSD-3 / MIT / Apache-2.0 / ISC），
+而 Apache-2.0 在 MIT 的基础上多给了**明确的专利授权**和**商标不授权**条款，
+对公司或商业集成方更清晰；代价是分发时要保留 NOTICE、修改过的文件要标注。
 
 第三方组件（PyTorch BSD-3、faster-whisper MIT、PySceneDetect BSD-3、open_clip MIT、
 Gradio Apache-2.0、FFmpeg LGPL/GPL 等）与模型权重（Whisper / CLIP 均 MIT）的许可说明见
 [THIRD_PARTY.md](THIRD_PARTY.md)。
 
 > 注意：FFmpeg 仅以子进程方式调用，未随仓库分发；若你要打包分发，请自行确认所用
-> FFmpeg 构建的许可条款。
+> FFmpeg 构建的许可条款。Apache-2.0 与 GPLv2 不兼容，若将来要并入 GPLv2 代码需先评估。
