@@ -1,0 +1,14 @@
+# AIClip 运行依赖
+# 说明：本机已有全局 torch/torchvision/opencv/faster-whisper/librosa，
+#       .venv 采用 --system-site-packages 复用，不重复下载 2GB 的 torch。
+#       以下为必须补充的包（走阿里云源安装）。
+
+faster-whisper>=1.2
+scenedetect>=0.6
+open_clip_torch>=2.24
+gradio>=4.0
+numpy
+Pillow
+librosa
+soundfile
+tqdm

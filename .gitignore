@@ -1,0 +1,28 @@
+# 环境与产物
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# 模型权重（461MB + 577MB，首次运行时自动下载）
+models/
+
+# 本地安装包（2.6GB，不入库）
+wheels/
+
+# 运行产物
+out/
+*.log
+
+# 演示素材中间文件（demo.mp4 保留）
+demo/*.wav
+demo/scene*.jpg
+demo/imgs.txt
+
+# 编辑器
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
